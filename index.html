@@ -4,42 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <div>
-        <h2 class="mainhead">STOP WATCH</h2>
-        <div class="instruct">
-        <p class="para">Space bar ---- (start/pause)</p>
-        <p class="para">Enter Key ---- (stop)</p>
-        <p class="para">You can also set fixed timer in <bold>seconds</bold></p>
-        </div>
+    <img src="https://image.flaticon.com/icons/svg/3095/3095036.svg" height="80px">
+    <h1 class="main_heading">STOPWATCH</h1>
+    <img src="https://image.flaticon.com/icons/svg/3095/3095036.svg" height="80px">
+    <div class='gradient'>
+        <h1 id="m">00</h1>
+        <h1>:</h1>
+        <h1 id="s">00</h1>
+        <h1>:</h1>
+        <h1 id="ms">00</h1>
     </div>
-    
-
-    <h1 id="min">0</h1>
-    <h1 id="sec">0</h1>
-    <h1 id="msec">0</h1>
     <div>
-        <button onclick="start()" id="startbut">Start</button>
-        <button onclick="stop()"  id="stopbut">Pause</button>
-        <button onclick="reset()"  id="resetbut">Reset</button>
+        <button class="b1" id="b1" onclick="start()"><img
+                src="https://cdn0.iconfinder.com/data/icons/ie_Glossy_button/64/button_16.png" width="50px"></button>
+        <button class="b2" id="b2" onclick="pause()"><img
+                src="https://cdn2.iconfinder.com/data/icons/iconslandplayer/PNG/256x256/PlainGreen/PauseHot.png"
+                width="50px"></button>
+        <button class="b3" id="b3" onclick="reset()"><img
+                src="https://findicons.com/files/icons/990/vistaico_toolbar/128/undo.png" width="50px"></button>
+
     </div>
-    <br>
-    <button onclick="settimer()" id="mybutton">Set Fix Timer</button>
-    <br>
-    <input type="text" id="fixed">
 
-    <audio controls id="music">
-        <source src="buzzer.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-        
+    <script src="app.js"></script>
 
-    <script src="index2.js"></script>
 </body>
 
 </html>
